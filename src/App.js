@@ -20,13 +20,10 @@ class App extends Component {
     });
   }
 
-
-
-
   addItem() {
     // create item w/ unique id
-    const newItem = { 
-      value: this.state.newItem.slice()
+    const newItem = {
+      value: this.state.newItem.slice(),
     };
     // copy of current list
     const list = [...this.state.list];
@@ -48,7 +45,7 @@ class App extends Component {
     // filter out item that is being deleted
     const updatedList = list.filter((item) => item.id !== id);
 
-    this.setState({list: updatedList});
+    this.setState({ list: updatedList });
   }
 
   render() {
