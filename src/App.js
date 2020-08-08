@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/accessible-emoji */
 /* eslint-disable react/button-has-type */
 import React, { Component } from 'react';
@@ -19,11 +20,13 @@ class App extends Component {
     });
   }
 
+
+
+
   addItem() {
     // create item w/ unique id
-    const newItem = {
-      id: 1 + Math.random(),
-      value: this.state.newItem.slice(),
+    const newItem = { 
+      value: this.state.newItem.slice()
     };
     // copy of current list
     const list = [...this.state.list];
@@ -43,7 +46,7 @@ class App extends Component {
     const list = [...this.state.list];
 
     // filter out item that is being deleted
-    const updatedList = list.filter((item) => item.id != id);
+    const updatedList = list.filter((item) => item.id !== id);
 
     this.setState({list: updatedList});
   }
@@ -66,8 +69,6 @@ class App extends Component {
           <ul>
             {this.state.list.map((item) => (
               <li>
-                key=
-                {item.id}
                 {item.value}
                 <button
                   onClick={() => this.deleteItem(item.id)}
