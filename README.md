@@ -3,10 +3,9 @@
 
 
 ## TODO 
-  * cleanup app.js 
-  * move functions into seperate components to achieve the above goal 
+
   * add styles (bootstrap 4 maybe with some font awesome or materialize icons for the footer) 
-  * deploy with vercel 
+  * deploy with vercel ✅
 
 
 ## Available Scripts
