@@ -3,8 +3,6 @@
 
 
 ## TODO 
-
-  * add styles (bootstrap 4 maybe with some font awesome or materialize icons for the footer) 
   * fix build errors & deploy
 
 
