@@ -5,7 +5,7 @@
 ## TODO 
 
   * add styles (bootstrap 4 maybe with some font awesome or materialize icons for the footer) 
-  * deploy with vercel ❌ build failed unmet dependencies 
+  * fix build errors & deploy
 
 
 ## Available Scripts
